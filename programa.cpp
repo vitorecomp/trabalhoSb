@@ -23,6 +23,8 @@ Programa::Programa(char* entradaName, char* saidaName)
 		binInProgram = (int*) realloc (binInProgram, (i+1)*sizeof(unsigned short int));
 		entrada >> binInProgram[i];
 	}
+
+	binSize = i;
 	
 
 	//abre as saidas
@@ -42,6 +44,8 @@ void Programa::run()
 {
 	//gera a tabela de variaveis
 
+	//otimiza a tabela de variavies
+ 
 	//traduz a tabela de variavies
 
 	//gera a tabela de intruçoes

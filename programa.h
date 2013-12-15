@@ -9,7 +9,9 @@ using namespace std;
 
 class Programa
 {
+private:
 	unsigned short int *binReadProgram;
+	int binSize;
 	srtring asmOut;
 	unsigned int *elf;
 
