@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string.h>
+#include <fstream>
 
 using namespace std;
 
@@ -11,6 +12,10 @@ class Programa
 	unsigned short int *binReadProgram;
 	srtring asmOut;
 	unsigned int *elf;
+
+	ofstream entrada;
+	ofstream saidaAsm;
+	ofstream saidaElf;
 public:
 
 	//abre a entra e saida, e gera o arquivo de inteiros
