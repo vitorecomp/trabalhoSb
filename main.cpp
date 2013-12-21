@@ -9,13 +9,13 @@ int main(int argc, char * argv[])
 {
 	Programa *programa = NULL;
 
-	if(argc < 3){
+	if(argc < 2){
 		cout << "Numero de argumentos invalidos" << endl;
 		return 1;
 	}
 	//passa para o programa
-	programa =  new Programa(argv[1], argv[2]);
-	Programa->run();
-	Programa->saveAsm();
-	Programa->saveElf();
+	programa =  new Programa(argv[1]);
+	programa->run();
+	programa->saveAsm();
+	programa->saveElf();
 }
